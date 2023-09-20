@@ -10,6 +10,7 @@ namespace Zenject
             //Bindings
             Container.Bind<Camera>().FromComponentInHierarchy().AsSingle();
             Container.Bind<FingersJoystickScript>().FromComponentInHierarchy().AsTransient();
+            Container.Bind<Rigidbody>().FromComponentInHierarchy().AsTransient();
             //Container.Bind<LeanTouch>()
         
             SignalBusInstaller.Install(Container);
